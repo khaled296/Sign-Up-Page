@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إدارة المستخدمين</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-6xl mx-auto bg-white p-6 rounded-md shadow-md">
+      <!-- العنوان -->
+      <h1 class="text-center text-green-700 text-2xl font-bold mb-6">
+        إدارة المستخدمين
+      </h1>
+
+      <!-- الصف العلوي: تم تبديل الترتيب -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mb-4 gap-4"
+      >
+        <!-- القائمة المنسدلة على اليمين -->
+        <select class="border border-gray-300 rounded-md px-3 py-2">
+          <option>جميع الأقسام</option>
+          <option>قسم 1</option>
+          <option>قسم 2</option>
+        </select>
+
+        <!-- زر الإضافة على اليسار -->
+        <button
+          class="bg-green-700 hover:bg-green-800 transition duration-200 text-white font-semibold px-5 py-2 rounded-lg shadow flex items-center gap-2"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+          <span>إضافة مستخدم جديد</span>
+        </button>
+      </div>
+
+      <!-- الجدول -->
+      <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-200 text-right">
+          <thead>
+            <tr class="bg-green-700 text-white text-sm">
+              <th class="py-2 px-4">الاسم</th>
+              <th class="py-2 px-4">البريد الإلكتروني</th>
+              <th class="py-2 px-4">رقم القسم</th>
+              <th class="py-2 px-4">الدور</th>
+              <th class="py-2 px-4">الحالة</th>
+              <th class="py-2 px-4 text-center">إجراءات</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <!-- صف 1 -->
+            <tr class="border-t">
+              <td class="py-2 px-4">محمد أحمد</td>
+              <td class="py-2 px-4">mohamed@example.com</td>
+              <td class="py-2 px-4">1</td>
+              <td class="py-2 px-4">مدير</td>
+              <td class="py-2 px-4 text-green-700 font-medium">مفعل</td>
+              <td class="py-2 px-4 flex flex-wrap gap-2">
+                <button
+                  class="bg-green-600 text-white text-xs px-3 py-1 rounded mr-12"
+                >
+                  تعديل
+                </button>
+                <button class="bg-red-500 text-white text-xs px-3 py-1 rounded">
+                  حذف
+                </button>
+                <button
+                  class="bg-gray-500 text-white text-xs px-3 py-1 rounded"
+                >
+                  إيقاف
+                </button>
+              </td>
+            </tr>
+
+            <!-- صف 2 -->
+            <tr class="border-t">
+              <td class="py-2 px-4">سارة علي</td>
+              <td class="py-2 px-4">sara@example.com</td>
+              <td class="py-2 px-4">2</td>
+              <td class="py-2 px-4">مستخدم</td>
+              <td class="py-2 px-4 text-red-600 font-medium">موقوف</td>
+              <td class="py-2 px-4 flex flex-wrap gap-2">
+                <button
+                  class="bg-green-600 text-white text-xs px-3 py-1 rounded mr-12"
+                >
+                  تعديل
+                </button>
+                <button class="bg-red-500 text-white text-xs px-3 py-1 rounded">
+                  حذف
+                </button>
+                <button
+                  class="bg-green-700 text-white text-xs px-3 py-1 rounded"
+                >
+                  تفعيل
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
