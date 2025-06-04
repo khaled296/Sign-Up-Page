@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تواصل معنا</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Header with background image -->
+    <div class="relative">
+      <img
+        src="img/WhatsApp Image 2025-06-04 at 19.35.28_593eccdf.jpg"
+        alt="تواصل معنا"
+        class="w-full h-100 object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white text-center"
+      >
+        <h1 class="text-3xl font-bold mb-2">تواصل معنا</h1>
+        <button
+          class="bg-green-600 hover:bg-green-700 text-white px-4 py-1 rounded"
+        >
+          الرئيسية / تواصل معنا
+        </button>
+      </div>
+    </div>
+
+    <!-- Contact Title and Text -->
+    <div class="text-center mt-10 mb-6 px-4">
+      <h2
+        class="text-2xl font-bold text-gray-800 mb-2 inline-block border-b-4 border-green-600 pb-1"
+      >
+        تواصل معنا
+      </h2>
+      <p class="text-gray-600 mt-2">
+        نحن هنا لتقديم الدعم على مدار الساعه طوال أيام الأسبوع
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="max-w-5xl mx-auto bg-white p-6 rounded-lg shadow space-y-6">
+      <div class="grid md:grid-cols-2 gap-4">
+        <input
+          type="text"
+          placeholder="الاسم الأول"
+          class="border-b p-2 focus:outline-none"
+        />
+        <input
+          type="text"
+          placeholder="الاسم الأخير"
+          class="border-b p-2 focus:outline-none"
+        />
+        <input
+          type="email"
+          placeholder="البريد الإلكتروني"
+          class="border-b p-2 focus:outline-none"
+        />
+        <input
+          type="tel"
+          placeholder="رقم الهاتف"
+          class="border-b p-2 focus:outline-none"
+        />
+      </div>
+      <textarea
+        placeholder="استفسارك"
+        class="w-full border-b p-2 focus:outline-none"
+      ></textarea>
+      <div class="text-center">
+        <button
+          type="submit"
+          class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded"
+        >
+          تأكيد الإرسال
+        </button>
+      </div>
+    </form>
+
+    <!-- Contact Info Section (قابلة للضغط) -->
+    <div
+      class="grid md:grid-cols-3 gap-4 mt-10 max-w-6xl mx-auto text-center px-4"
+    >
+      <!-- كارت: رقم الهاتف -->
+      <a
+        href="tel:010178849478"
+        class="block bg-white rounded-t-lg shadow p-4 border-b-4 border-green-600 hover:bg-gray-50 transition duration-200"
+      >
+        <div class="flex flex-col items-center gap-2">
+          <div class="text-green-600 text-3xl">📞</div>
+          <p class="text-green-700 font-bold">اتصل بنا</p>
+          <p class="text-gray-700">010178849478</p>
+        </div>
+      </a>
+
+      <!-- كارت: البريد الإلكتروني -->
+      <a
+        href="mailto:logo@gmail.com"
+        class="block bg-white rounded-t-lg shadow p-4 border-b-4 border-green-600 hover:bg-gray-50 transition duration-200"
+      >
+        <div class="flex flex-col items-center gap-2">
+          <div class="text-green-600 text-3xl">✉️</div>
+          <p class="text-green-700 font-bold">الإيميل</p>
+          <p class="text-gray-700">logo@gmail.com</p>
+        </div>
+      </a>
+
+      <!-- كارت: العنوان -->
+      <a
+        href="https://www.google.com/maps?q=المنوفية،+شبين،+مجمع+الكليات"
+        target="_blank"
+        class="block bg-white rounded-t-lg shadow p-4 border-b-4 border-green-600 hover:bg-gray-50 transition duration-200"
+      >
+        <div class="flex flex-col items-center gap-2">
+          <div class="text-green-600 text-3xl">📍</div>
+          <p class="text-green-700 font-bold">العنوان</p>
+          <p class="text-gray-700">المنوفية، شبين، مجمع الكليات</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-center text-sm text-gray-600 p-4">
+      جميع الحقوق محفوظة &copy; خلية العلوم | 2024 | نحن نستمع إليك ونعمل على
+      التطوير
+    </footer>
+  </body>
+</html>
