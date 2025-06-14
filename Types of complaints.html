@@ -3,45 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>إدارة الأشخاص</title>
+    <title>إدارة أنواع الشكاوى</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
   <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <!-- Manage Users Card -->
+    <!-- Manage Complaints Types Card -->
     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
       <!-- Title -->
-      <h1 class="text-2xl font-bold text-green-600 text-right mb-6">
-        اداره انواع الشكاوي
+      <h1 class="text-2xl font-bold text-green-600 text-center mb-6">
+        إدارة أنواع الشكاوى
       </h1>
 
-      <h3 class="text-l font-bold text-gray-400 text-right mb-6">
-        يرجي ادخال نوع الشكوى وتحديد القسم التابع لها
+      <h3 class="text-l font-bold text-gray-400 text-center mb-6">
+        يرجى إدخال نوع الشكوى وتحديد القسم التابع لها
       </h3>
 
       <!-- Form Fields -->
       <div class="space-y-4">
-        <!-- Name -->
+        <!-- Complaint Type -->
         <div>
-          <label for="name" class="block text-sm font-medium text-gray-700 mb-1"
-            >نوع الشكاوي</label
+          <label
+            for="name"
+            class="block text-sm font-medium text-gray-700 mb-1"
           >
+            نوع الشكوى
+          </label>
           <input
             type="text"
             id="name"
             class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-            placeholder="مثلا: انقطاع الخدمه"
+            placeholder="مثلاً: انقطاع الخدمة"
           />
         </div>
-        <!-- User Type -->
+
+        <!-- Section Name -->
         <div>
           <label
             for="user-type"
             class="block text-sm font-medium text-gray-700 mb-1"
-            >اسم القسم</label
           >
+            اسم القسم
+          </label>
           <select
             id="user-type"
             class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -50,19 +55,20 @@
           </select>
         </div>
 
-        <!-- Buttons -->
+        <!-- Buttons (تم عكس الترتيب) -->
         <div class="flex justify-between space-x-4 space-x-reverse">
+          <!-- Cancel Button -->
+          <button
+            class="w-1/2 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200"
+          >
+            إلغاء
+          </button>
+
           <!-- Add Button -->
           <button
             class="w-1/2 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200"
           >
             إضافة
-          </button>
-          <!-- Cancel Button -->
-          <button
-            class="w-1/2 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition duration-200"
-          >
-            إلغاء
           </button>
         </div>
       </div>
@@ -84,15 +90,25 @@
               <td class="border p-2 text-right">الدعم الفني</td>
               <td class="border p-2 text-right">
                 <div class="flex space-x-2 space-x-reverse">
+                  <!-- حذف -->
+                  <button
+                    class="px-2 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200"
+                  >
+                    حذف
+                  </button>
+
+                  <!-- تعديل -->
                   <button
                     class="px-2 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200"
                   >
                     تعديل
                   </button>
+
+                  <!-- تفاصيل -->
                   <button
-                    class="px-2 py-1 bg-red-600 text-white rounded-md hover:bg-red-700 transition duration-200"
+                    class="px-2 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200"
                   >
-                    حذف
+                    تفاصيل
                   </button>
                 </div>
               </td>

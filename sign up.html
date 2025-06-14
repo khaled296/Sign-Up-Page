@@ -24,7 +24,7 @@
           <label
             for="username"
             class="block text-sm font-medium text-gray-700 mb-1"
-            >اسم المستخدم</label
+            >اسم بالكامل</label
           >
           <input
             type="text"
@@ -49,6 +49,35 @@
           />
         </div>
 
+        <!-- رقم الهاتف -->
+        <div>
+          <label
+            for="phone"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >رقم الهاتف</label
+          >
+          <input
+            type="tel"
+            id="phone"
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            placeholder="أدخل رقم هاتفك"
+          />
+        </div>
+        <!-- العنوان -->
+        <div>
+          <label
+            for="address"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >العنوان</label
+          >
+          <input
+            type="text"
+            id="address"
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            placeholder="أدخل عنوانك"
+          />
+        </div>
+
         <!-- Password -->
         <div>
           <label
@@ -64,22 +93,19 @@
           />
         </div>
 
+        <!-- تأكيد كلمة السر -->
         <div>
-          <div>
-            <label
-              for="password"
-              class="block text-sm font-medium text-gray-700 mb-1"
-              >تاكيد كلمه السر</label
-            >
-            <div class="relative">
-              <input
-                type="password"
-                id="password"
-                class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="تاكيد كلمة السر"
-              />
-            </div>
-          </div>
+          <label
+            for="confirm-password"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >تاكيد كلمه السر</label
+          >
+          <input
+            type="password"
+            id="confirm-password"
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            placeholder="تاكيد كلمة السر"
+          />
         </div>
 
         <!-- Login Button -->

@@ -28,47 +28,60 @@
         </button>
       </div>
     </div>
+    <br /><br />
 
-    <!-- Contact Title and Text -->
-    <div class="text-center mt-10 mb-6 px-4">
-      <h2
-        class="text-2xl font-bold text-gray-800 mb-2 inline-block border-b-4 border-green-600 pb-1"
-      >
-        تواصل معنا
-      </h2>
-      <p class="text-gray-600 mt-2">
-        نحن هنا لتقديم الدعم على مدار الساعه طوال أيام الأسبوع
-      </p>
-    </div>
+    <h1 class="text-3xl text-center font-bold mb-2">تواصل معنا</h1>
+    <br />
+    <h1 class="text-l text-center text-gray-600 font-bold mb-2">
+      نحن هنا علي تقديم الدعم علي مدار الساعه طوال ايام الاسبوع
+    </h1>
+    <br />
 
-    <!-- Contact Form -->
+    <!-- Contact Form (بعد التعديلات حسب طلبك) -->
     <form class="max-w-5xl mx-auto bg-white p-6 rounded-lg shadow space-y-6">
-      <div class="grid md:grid-cols-2 gap-4">
+      <!-- عنوان الشكوى -->
+      <div>
+        <label
+          for="title"
+          class="block text-sm font-semibold text-gray-700 mb-1"
+          >عنوان الشكوى</label
+        >
         <input
           type="text"
-          placeholder="الاسم الأول"
-          class="border-b p-2 focus:outline-none"
-        />
-        <input
-          type="text"
-          placeholder="الاسم الأخير"
-          class="border-b p-2 focus:outline-none"
-        />
-        <input
-          type="email"
-          placeholder="البريد الإلكتروني"
-          class="border-b p-2 focus:outline-none"
-        />
-        <input
-          type="tel"
-          placeholder="رقم الهاتف"
-          class="border-b p-2 focus:outline-none"
+          id="title"
+          placeholder="أدخل عنوان الشكوى"
+          class="w-full border-b p-2 focus:outline-none"
         />
       </div>
-      <textarea
-        placeholder="استفسارك"
-        class="w-full border-b p-2 focus:outline-none"
-      ></textarea>
+
+      <!-- نوع الشكوى -->
+      <div>
+        <label for="type" class="block text-sm font-semibold text-gray-700 mb-1"
+          >اختر نوع الشكوى</label
+        >
+        <select id="type" class="w-full border-b p-2 focus:outline-none">
+          <option value="">اختر نوع الشكوى</option>
+          <option value="فنية">شكوى فنية</option>
+          <option value="مالية">شكوى مالية</option>
+          <option value="أخرى">أخرى</option>
+        </select>
+      </div>
+
+      <!-- الاستفسار -->
+      <div>
+        <label
+          for="message"
+          class="block text-sm font-semibold text-gray-700 mb-1"
+          >استفسارك</label
+        >
+        <textarea
+          id="message"
+          placeholder="اكتب تفاصيل الشكوى"
+          class="w-full border-b p-2 focus:outline-none"
+        ></textarea>
+      </div>
+
+      <!-- زر الإرسال -->
       <div class="text-center">
         <button
           type="submit"
@@ -79,31 +92,31 @@
       </div>
     </form>
 
-    <!-- Contact Info Section (قابلة للضغط) -->
+    <!-- Contact Info Section (بعد التعديل) -->
     <div
       class="grid md:grid-cols-3 gap-4 mt-10 max-w-6xl mx-auto text-center px-4"
     >
       <!-- كارت: رقم الهاتف -->
       <a
         href="tel:010178849478"
-        class="block bg-white rounded-t-lg shadow p-4 border-b-4 border-green-600 hover:bg-gray-50 transition duration-200"
+        class="block bg-gray-100 rounded-t-lg shadow p-4 hover:bg-gray-200 transition duration-200"
       >
         <div class="flex flex-col items-center gap-2">
-          <div class="text-green-600 text-3xl">📞</div>
-          <p class="text-green-700 font-bold">اتصل بنا</p>
-          <p class="text-gray-700">010178849478</p>
+          <div class="text-black text-3xl">📞</div>
+          <p class="font-bold text-black">اتصل بنا</p>
+          <p class="text-black">010178849478</p>
         </div>
       </a>
 
       <!-- كارت: البريد الإلكتروني -->
       <a
         href="mailto:logo@gmail.com"
-        class="block bg-white rounded-t-lg shadow p-4 border-b-4 border-green-600 hover:bg-gray-50 transition duration-200"
+        class="block bg-gray-100 rounded-t-lg shadow p-4 hover:bg-gray-200 transition duration-200"
       >
         <div class="flex flex-col items-center gap-2">
-          <div class="text-green-600 text-3xl">✉️</div>
-          <p class="text-green-700 font-bold">الإيميل</p>
-          <p class="text-gray-700">logo@gmail.com</p>
+          <div class="text-black text-3xl">✉️</div>
+          <p class="font-bold text-black">الإيميل</p>
+          <p class="text-black">logo@gmail.com</p>
         </div>
       </a>
 
@@ -111,18 +124,18 @@
       <a
         href="https://www.google.com/maps?q=المنوفية،+شبين،+مجمع+الكليات"
         target="_blank"
-        class="block bg-white rounded-t-lg shadow p-4 border-b-4 border-green-600 hover:bg-gray-50 transition duration-200"
+        class="block bg-gray-100 rounded-t-lg shadow p-4 hover:bg-gray-200 transition duration-200"
       >
         <div class="flex flex-col items-center gap-2">
-          <div class="text-green-600 text-3xl">📍</div>
-          <p class="text-green-700 font-bold">العنوان</p>
-          <p class="text-gray-700">المنوفية، شبين، مجمع الكليات</p>
+          <div class="text-black text-3xl">📍</div>
+          <p class="font-bold text-black">العنوان</p>
+          <p class="text-black">المنوفية، شبين، مجمع الكليات</p>
         </div>
       </a>
     </div>
 
-    <!-- Footer -->
-    <footer class="mt-10 text-center text-sm text-gray-600 p-4">
+    <!-- Footer (بعد التعديل) -->
+    <footer class="mt-10 text-center text-sm bg-black text-white p-4">
       جميع الحقوق محفوظة &copy; خلية العلوم | 2024 | نحن نستمع إليك ونعمل على
       التطوير
     </footer>
