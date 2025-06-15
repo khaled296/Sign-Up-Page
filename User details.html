@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تفاصيل المستخدمين</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!-- Manage Users Card -->
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl">
+      <!-- Title -->
+      <h1 class="text-2xl font-bold text-green-600 text-center mb-4">
+        تفاصيل المستخدمين
+      </h1>
+      <!-- Add Button -->
+      <div class="text-right mb-6">
+        <button
+          class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200 float-left"
+        >
+          إضافة مستخدم</button
+        ><br />
+      </div>
+
+      <!-- Table -->
+      <div class="overflow-x-auto">
+        <table class="w-full table-auto border-collapse">
+          <thead>
+            <tr class="bg-green-600 text-white">
+              <th class="border p-2 text-center">الاسم</th>
+              <th class="border p-2 text-center">الايميل</th>
+              <th class="border p-2 text-center">الإجراءات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border">
+              <td class="border p-2 text-center">محمد أحمد</td>
+              <td class="border p-2 text-center">as876899879@gmail.com</td>
+              <td class="border p-2 text-center">
+                <div class="flex space-x-2 space-x-reverse">
+                  <button
+                    class="px-2 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200 sm:px-3 sm:py-1"
+                  >
+                    تعديل
+                  </button>
+                  <button
+                    class="px-2 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200 sm:px-3 sm:py-1"
+                  >
+                    حذف
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr class="border">
+              <td class="border p-2 text-center">مستخدم 2</td>
+              <td class="border p-2 text-center">mohamed@example.com</td>
+              <td class="border p-2 text-center">
+                <div class="flex space-x-2 space-x-reverse">
+                  <button
+                    class="px-2 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200 sm:px-3 sm:py-1"
+                  >
+                    تعديل
+                  </button>
+                  <button
+                    class="px-2 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200 sm:px-3 sm:py-1"
+                  >
+                    حذف
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
